@@ -12,6 +12,8 @@
 		492076EF206E17A6002BC2D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492076ED206E17A6002BC2D1 /* Main.storyboard */; };
 		492076F1206E17A6002BC2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492076F0206E17A6002BC2D1 /* Assets.xcassets */; };
 		492076F4206E17A6002BC2D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492076F2206E17A6002BC2D1 /* LaunchScreen.storyboard */; };
+		492076FC206E1F81002BC2D1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492076FB206E1F81002BC2D1 /* LoginVC.swift */; };
+		C7234A3F7801B338EE005D05 /* Pods_registerForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4CE1193F022C988A5EE2C3 /* Pods_registerForm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		492076F0206E17A6002BC2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		492076F3206E17A6002BC2D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		492076F5206E17A6002BC2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492076FB206E1F81002BC2D1 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		495BC9B13EFEBC687A315713 /* Pods-registerForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-registerForm.release.xcconfig"; path = "Pods/Target Support Files/Pods-registerForm/Pods-registerForm.release.xcconfig"; sourceTree = "<group>"; };
+		8F4CE1193F022C988A5EE2C3 /* Pods_registerForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_registerForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1714809AFBA61E3C509E92 /* Pods-registerForm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-registerForm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-registerForm/Pods-registerForm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7234A3F7801B338EE005D05 /* Pods_registerForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				492076E8206E17A5002BC2D1 /* registerForm */,
 				492076E7206E17A5002BC2D1 /* Products */,
+				C6B214A151A45B7026B2D00A /* Pods */,
+				5321F7B9EB17D61649373BAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,32 @@
 		492076E8206E17A5002BC2D1 /* registerForm */ = {
 			isa = PBXGroup;
 			children = (
+				492076ED206E17A6002BC2D1 /* Main.storyboard */,
+				492076FB206E1F81002BC2D1 /* LoginVC.swift */,
 				492076E9206E17A5002BC2D1 /* AppDelegate.swift */,
 				492076EB206E17A6002BC2D1 /* ViewController.swift */,
-				492076ED206E17A6002BC2D1 /* Main.storyboard */,
 				492076F0206E17A6002BC2D1 /* Assets.xcassets */,
 				492076F2206E17A6002BC2D1 /* LaunchScreen.storyboard */,
 				492076F5206E17A6002BC2D1 /* Info.plist */,
 			);
 			path = registerForm;
+			sourceTree = "<group>";
+		};
+		5321F7B9EB17D61649373BAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F4CE1193F022C988A5EE2C3 /* Pods_registerForm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6B214A151A45B7026B2D00A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D1714809AFBA61E3C509E92 /* Pods-registerForm.debug.xcconfig */,
+				495BC9B13EFEBC687A315713 /* Pods-registerForm.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 492076F8206E17A6002BC2D1 /* Build configuration list for PBXNativeTarget "registerForm" */;
 			buildPhases = (
+				97F4CD06EF5008F8CD229BC5 /* [CP] Check Pods Manifest.lock */,
 				492076E2206E17A5002BC2D1 /* Sources */,
 				492076E3206E17A5002BC2D1 /* Frameworks */,
 				492076E4206E17A5002BC2D1 /* Resources */,
+				58D6E1B743437032EE020238 /* [CP] Embed Pods Frameworks */,
+				9056DC004407849AEA3DA60A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +161,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58D6E1B743437032EE020238 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-registerForm/Pods-registerForm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-registerForm/Pods-registerForm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9056DC004407849AEA3DA60A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-registerForm/Pods-registerForm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97F4CD06EF5008F8CD229BC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-registerForm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		492076E2206E17A5002BC2D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +224,7 @@
 			files = (
 				492076EC206E17A6002BC2D1 /* ViewController.swift in Sources */,
 				492076EA206E17A5002BC2D1 /* AppDelegate.swift in Sources */,
+				492076FC206E1F81002BC2D1 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +359,7 @@
 		};
 		492076F9206E17A6002BC2D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D1714809AFBA61E3C509E92 /* Pods-registerForm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +375,7 @@
 		};
 		492076FA206E17A6002BC2D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 495BC9B13EFEBC687A315713 /* Pods-registerForm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
